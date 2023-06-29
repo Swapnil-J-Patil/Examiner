@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "170580228209",
+    "project_id": "examiner-51a91",
+    "storage_bucket": "examiner-51a91.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:170580228209:android:37b71d8c73985ebba983d0",
+        "android_client_info": {
+          "package_name": "com.example.examiner"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "170580228209-rcbejb6f9qvubull284rq5bqq5vdfr6g.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCkZM8A6KoQYOh1M1PLNmMKcVJwqPiB1bM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "170580228209-rcbejb6f9qvubull284rq5bqq5vdfr6g.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

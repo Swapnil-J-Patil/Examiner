@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".View.Teacher.TeacherPage"
+    android:background="@color/white">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="-16dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/help_and_support"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_marginTop="16dp"
+                android:src="@drawable/details"
+                app:civ_circle_background_color="@color/white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.498"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/event"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="Enter Your Details"
+                android:textColor="@color/black"
+                android:textIsSelectable="true"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/help_and_support" />
+
+            <EditText
+                android:id="@+id/token_et"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/input_bgblack"
+                android:drawableLeft="@drawable/baseline_insert_link_24"
+                android:drawablePadding="10dp"
+                android:hint="Enter Exam Link"
+                android:paddingLeft="13dp"
+                android:paddingTop="15dp"
+                android:paddingRight="13dp"
+                android:paddingBottom="15dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                android:textSize="15sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/event" />
+
+            <EditText
+                android:id="@+id/teachername_et"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/baseline_person_24"
+                android:drawablePadding="10dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/input_bgblack"
+                android:hint="Enter Your Name"
+                android:paddingLeft="13dp"
+                android:paddingTop="15dp"
+                android:paddingRight="13dp"
+                android:paddingBottom="15dp"
+                android:textSize="15sp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                app:layout_constraintEnd_toEndOf="@+id/token_et"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/token_et"
+                app:layout_constraintTop_toBottomOf="@+id/subject_et" />
+
+            <EditText
+                android:id="@+id/subject_et"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/baseline_menu_book_24"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/input_bgblack"
+                android:drawablePadding="10dp"
+                android:hint="Enter Subject Name"
+                android:textSize="15sp"
+                android:paddingLeft="13dp"
+                android:paddingTop="15dp"
+                android:paddingRight="13dp"
+                android:paddingBottom="15dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                app:layout_constraintEnd_toEndOf="@+id/token_et"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/token_et"
+                app:layout_constraintTop_toBottomOf="@+id/token_et" />
+
+            <Button
+                android:id="@+id/btn_get_token"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="24dp"
+                android:background="@drawable/buttonbg"
+                android:text="Generate a Token"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/teachername_et"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="@+id/teachername_et"
+                app:layout_constraintTop_toBottomOf="@+id/teachername_et" />
+
+            <TextView
+                android:id="@+id/token"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/input_bgblack"
+                android:drawableLeft="@drawable/baseline_token_24"
+                android:drawablePadding="10sp"
+                android:gravity="center"
+                android:paddingLeft="13dp"
+                android:paddingTop="15dp"
+                android:paddingRight="13dp"
+                android:paddingBottom="15dp"
+                android:textColor="@color/black"
+                android:textIsSelectable="true"
+                android:textSize="10sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/alreadyHaveToken"
+                app:layout_constraintVertical_bias="0.076" />
+
+            <TextView
+                android:id="@+id/alreadyHaveToken"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                android:gravity="center"
+                android:text="Already Have Token?"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/btn_get_token"
+                app:layout_constraintTop_toBottomOf="@+id/btn_get_token"
+                app:layout_constraintVertical_bias="0.0" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
