@@ -1,5 +1,5 @@
 # Examiner
-Examiner is an app which can detect whether a student is cheating in online exam or not.<br>
+Examiner –	The ultimate exam integrity companion. Detects and alerts teachers in real-time when students attempt to switch screens or leave their camera unattended, ensuring a secure and fair online examination environment.<br>
 <B>(Java, XML, Machine Learning, Firebase)</B><br>
 APK Link: https://drive.google.com/file/d/1WBDnBKYuAidnGwtL25kkJglDxyePXLGd/view?usp=drive_link <br><br><B> Splashscreen:</B><br><br>
 ![logorobot](https://github.com/Swapnil-J-Patil/QuickHeadlines/assets/129786110/66fd642a-1154-461f-98ef-1f4e53e12e8c)<br><br><B> Homescreen:</B><br><br>
